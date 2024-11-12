@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>候选人计票</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .candidate {
+            width: 50%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .candidate div {
+            display: flex;
+            align-items: center;
+        }
+        .candidate input {
+            width: 50px;
+            text-align: center;
+        }
+        .candidate button {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>候选人计票</h1>
+    <div class="container">
+        <div class="candidate">
+            <div>
+                <span>朱胡萌妘</span>
+                <input type="text" value="0">
+                <button onclick="increment(this)">+1</button>
+                <button onclick="decrement(this)">-1</button>
+            </div>
+        </div>
+        <div class="candidate">
+            <div>
+                <span>张哲昊</span>
+                <input type="text" value="0">
+                <button onclick="increment(this)">+1</button>
+                <button onclick="decrement(this)">-1</button>
+            </div>
+        </div>
+        <div class="candidate">
+            <div>
+                <span>戴伟鑫</span>
+                <input type="text" value="0">
+                <button onclick="increment(this)">+1</button>
+                <button onclick="decrement(this)">-1</button>
+            </div>
+        </div>
+        <div class="candidate">
+            <div>
+                <span>李哲夫</span>
+                <input type="text" value="0">
+                <button onclick="increment(this)">+1</button>
+                <button onclick="decrement(this)">-1</button>
+            </div>
+        </div>
+        <div class="candidate">
+            <div>
+                <span>鲍韵涵</span>
+                <input type="text" value="0">
+                <button onclick="increment(this)">+1</button>
+                <button onclick="decrement(this)">-1</button>
+            </div>
+        </div>
+        <div class="candidate">
+            <div>
+                <span>赵　绥</span>
+                <input type="text" value="0">
+                <button onclick="increment(this)">+1</button>
+                <button onclick="decrement(this)">-1</button>
+            </div>
+        </div>
+        <div class="candidate">
+            <div>
+                <span>卢清鑫</span>
+                <input type="text" value="0">
+                <button onclick="increment(this)">+1</button>
+                <button onclick="decrement(this)">-1</button>
+            </div>
+        </div>
+        <div class="candidate">
+            <div>
+                <span>李明喆</span>
+                <input type="text" value="0">
+                <button onclick="increment(this)">+1</button>
+                <button onclick="decrement(this)">-1</button>
+            </div>
+        </div>
+        <div class="candidate">
+            <div>
+                <span>王明臣</span>
+                <input type="text" value="0">
+                <button onclick="increment(this)">+1</button>
+                <button onclick="decrement(this)">-1</button>
+            </div>
+        </div>
+        <div class="candidate">
+            <div>
+                <span>王砚鹤</span>
+                <input type="text" value="0">
+                <button onclick="increment(this)">+1</button>
+                <button onclick="decrement(this)">-1</button>
+            </div>
+        </div>
+        <div class="candidate">
+            <div>
+                <span>于乐添</span>
+                <input type="text" value="0">
+                <button onclick="increment(this)">+1</button>
+                <button onclick="decrement(this)">-1</button>
+            </div>
+        </div>
+        <div class="candidate">
+            <div>
+                <span>曹懿硕</span>
+                <input type="text" value="0">
+                <button onclick="increment(this)">+1</button>
+                <button onclick="decrement(this)">-1</button>
+            </div>
+        </div>
+        <div class="candidate">
+            <div>
+                <span>徐亦乐</span>
+                <input type="text" value="0">
+                <button onclick="increment(this)">+1</button>
+                <button onclick="decrement(this)">-1</button>
+            </div>
+        </div>
+        <div class="candidate">
+            <div>
+                <span>李晓宇</span>
+                <input type="text" value="0">
+                <button onclick="increment(this)">+1</button>
+                <button onclick="decrement(this)">-1</button>
+            </div>
+        </div>
+        <div class="candidate">
+            <div>
+                <span>熊健澍</span>
+                <input type="text" value="0">
+                <button onclick="increment(this)">+1</button>
+                <button onclick="decrement(this)">-1</button>
+            </div>
+        </div>
+        <div class="candidate">
+            <div>
+                <span>郝庆安</span>
+                <input type="text" value="0">
+                <button onclick="increment(this)">+1</button>
+                <button onclick="decrement(this)">-1</button>
+            </div>
+        </div>
+        <div class="candidate">
+            <div>
+                <span>徐凯钖</span>
+                <input type="text" value="0">
+                <button onclick="increment(this)">+1</button>
+                <button onclick="decrement(this)">-1</button>
+            </div>
+        </div>
+        <div class="candidate">
+            <div>
+                <span>李瑞祺</span>
+                <input type="text" value="0">
+                <button onclick="increment(this)">+1</button>
+                <button onclick="decrement(this)">-1</button>
+            </div>
+        </div>
+        <div class="candidate">
+            <div>
+                <span>窦纪佳</span>
+                <input type="text" value="0">
+                <button onclick="increment(this)">+1</button>
+                <button onclick="decrement(this)">-1</button>
+            </div>
+        </div>
+        <div class="candidate">
+            <div>
+                <span>来恩泽</span>
+                <input type="text" value="0">
+                <button onclick="increment(this)">+1</button>
+                <button onclick="decrement(this)">-1</button>
+            </div>
+        </div>
+        <div class="candidate">
+            <div>
+                <span>赵宗棋</span>
+                <input type="text" value="0">
+                <button onclick="increment(this)">+1</button>
+                <button onclick="decrement(this)">-1</button>
+            </div>
+        </div>
+        <div class="candidate">
+            <div>
+                <span>卢翰博</span>
+                <input type="text" value="0">
+                <button onclick="increment(this)">+1</button>
+                <button onclick="decrement(this)">-1</button>
+            </div>
+        </div>
+        <div class="candidate">
+            <div>
+                <span>胡豪杰</span>
+                <input type="text" value="0">
+                <button onclick="increment(this)">+1</button>
+                <button onclick="decrement(this)">-1</button>
+            </div>
+        </div>
+        <div class="candidate">
+            <div>
+                <span>王贝宏</span>
+                <input type="text" value="0">
+                <button onclick="increment(this)">+1</button>
+                <button onclick="decrement(this)">-1</button>
+            </div>
+        </div>
+        <div class="candidate">
+            <div>
+                <span>胡晶晶</span>
+                <input type="text" value="0">
+                <button onclick="increment(this)">+1</button>
+                <button onclick="decrement(this)">-1</button>
+            </div>
+        </div>
+        <div class="candidate">
+            <div>
+                <span>付旭洋</span>
+                <input type="text" value="0">
+                <button onclick="increment(this)">+1</button>
+                <button onclick="decrement(this)">-1</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function increment(button) {
+            var input = button.previousElementSibling;
+            input.value = parseInt(input.value) + 1;
+        }
+
+        function decrement(button) {
+            var input = button.previousElementSibling.previousElementSibling;
+            if (parseInt(input.value) > 0) {
+                input.value = parseInt(input.value) - 1;
+            }
+        }
+    </script>
+</body>
+</html>
